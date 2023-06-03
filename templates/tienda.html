@@ -1,0 +1,195 @@
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== Favicon ===============-->
+  <link
+    rel="shortcut icon"
+    href="{{ url_for('static', filename='./images/logototal.png') }}"
+    type="image/png"
+  />
+  <!--=============== Swiper CSS ===============-->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <!--=============== Boxicons ===============-->
+  <link
+    href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <!--=============== Custom StyleSheet ===============-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <title>FitStride</title>
+</head>
+<body>
+  <!--=============== Header ===============-->
+  <header class="header">
+    <nav class="navbar">
+      <div class="row d-flex container">
+        <a href="" class="logo d-flex">
+          <img  src="{{ url_for('static', filename='./images/logohd.png') }}" alt="" />
+        </a>
+
+        <ul class="nav-list d-flex">
+          <a href="{{ url_for('home') }}">Inicio</a>
+          <a href="">Tienda</a>
+          <a href="">Usuarios</a>
+          <a href="">Eventos</a>
+        </ul>
+
+        <div class="col d-flex">
+          <form>
+            <input type="search" placeholder="Search your item" />
+            <button class="d-flex"><i class="bx bx-search"></i></button>
+          </form>
+          <a class="btn signin">Logueate!</a>
+        </div>
+        <!-- Hamburger -->
+        <div class="hamburger d-flex">
+          <i class="bx bx-menu"></i>
+        </div>
+
+    </nav>
+
+    <!--=============== Home ===============-->
+    <div class="home">
+      <div class="row container">
+        <div class="col">
+          <div class="faster">
+            Inscribete!
+            <div class="image d-flex">
+              <img src="{{ url_for('static', filename='./images/corredor.png') }}" alt="" />
+            </div>
+          </div>
+          <h1>
+            Te damos la bienvenida <br />
+            a nuestra <br />
+            <span class="color">Tienda!</span>
+          </h1>
+          <p class="text">
+            por cuestiones de tiempo la tienda aun no cuenta con datos, pero aqui te presentamos nuestro presupuesto!
+          </p>
+          <a href="{{ url_for('home') }}" class="btn">inicio</a>
+        </div>
+        <div class="col">
+          <img src="{{ url_for('static', filename='./images/imagen1.PNG') }}" alt="" />
+        </div>
+      </div>
+    </div>
+
+  <!--=============== About ===============-->
+  <section class="section about" id="about">
+    <div class="row container">
+      <div class="col">
+        <img src="{{ url_for('static', filename='./images/corredor.jpg') }}" alt="" />
+      </div>
+      <div class="col">
+        <h2>Nestro plan de finanzas!</h2>
+        <p>
+          En este lugar contaremos de donde se obtienen nuestros recuros y para donde van!
+        </p>
+        <div class="d-grid">
+          <div class="card">
+            <h4>Pagina web</h4>
+            <span>Cada contribución que recibimos a través de nuestra página web es fundamental para nuestro éxito. Con estos recursos, podremos adquirir los productos esenciales que ofreceremos en nuestra tienda, garantizando así una experiencia de compra satisfactoria para nuestros clientes.</span>
+          </div>
+          <div class="card">
+            <h4>Tienda!</h4>
+            <span>Con nuestros productos generamos ingresos que seran re invertios para incenticar el deporte y el manejo saludable de las redes sociales!</span>
+          </div>
+          <div class="card">
+            <h4>Presupuesto inicial</h4>
+            <span>$300.000 (pagina web) </span>
+          </div>
+          <div class="card">
+            <h4>Precio de venta</h4>
+            <span>Precio promedio de venta por artículo: $50,000 COP
+              Se espera vender 500 artículos al mes</span>
+          </div>
+
+
+          <div class="card">
+            <h4>proyeccion de ingresos de tienda</h4>
+            <span>Ingresos mensuales esperados: $50,000 COP (precio promedio) x 500 (artículos vendidos) = $25,000,000 COP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=============== App ===============-->
+  <section class="section app">
+    <div class="row container">
+      <div class="col">
+        <div class="circle">
+          <div class="inner-circle"></div>
+          <img class="logtotal" src="{{ url_for('static', filename='./images/logototal.png') }}" alt="" />
+        </div>
+      </div>
+      <div class="col">
+        <h2>
+          Disfruta de todas nuestras ventajas y servicios exclusivos
+        </h2>
+        <p>
+          recuerda unirte a nuestra comunidad para hacer parte de 
+          mejores eventos y compartir con otros usuarios!
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--=============== Footer ===============-->
+  <footer class="footer">
+    <div class="row container">
+      <div class="col">
+        <div class="logo d-flex">
+          <img src="{{ url_for('static', filename='./images/logo.png') }}" alt="logo" />
+        </div>
+      </div>
+      <div class="col">
+        <div>
+          <h4>Tienda</h4>
+          <a href="">Presupuesto</a>
+          <a href="">... </a>
+          <a href="">...</a>
+          <a href="">...</a>
+        </div>
+        <div>
+          <h4>Servicios</h4>
+          <a href="">...</a>
+          <a href="">... </a>
+          <a href="">...</a>
+          <a href="">...</a>
+        </div>
+        <div>
+          <h4>Soporte</h4>
+          <a href="">...</a>
+          <a href="">... </a>
+          <a href="">...</a>
+          <a href="">...</a>
+        </div>
+        <div>
+          <h4>Contactanos!</h4>
+          <a href="">...</a>
+          <a href="">... </a>
+          <a href="">...</a>
+          <a href="">...</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    <div class="row container d-flex">
+      <p>Copyright © 2023 FitStride</p>
+      <p>Created by Miguel Diaz, Daniela Benjumea</p>
+    </div>
+  </div>
+
+  <!--=============== Swiper JS ===============-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!--=============== Custom JS ===============-->
+  <script src="{{ url_for('static', filename='./js/main.js') }}"></script>
+</body>
+</html>

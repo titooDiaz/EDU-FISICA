@@ -1,0 +1,345 @@
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== Favicon ===============-->
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='./images/logototal.png') }}"
+      type="image/png"
+    />
+    <!--=============== Swiper CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--=============== Boxicons ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--=============== Custom StyleSheet ===============-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <title>FitStride</title>
+  </head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="header">
+      <nav class="navbar">
+        <div class="row d-flex container">
+          <a href="" class="logo d-flex">
+            <img  src="{{ url_for('static', filename='./images/logohd.png') }}" alt="" />
+          </a>
+
+          <ul class="nav-list d-flex">
+            <a href="">Inicio</a>
+            <a href="{{ url_for('tienda') }}">Tienda</a>
+            <a href="">Usuarios</a>
+            <a href="">Eventos</a>
+          </ul>
+
+          <div class="col d-flex">
+            <form>
+              <input type="search" placeholder="Search your item" />
+              <button class="d-flex"><i class="bx bx-search"></i></button>
+            </form>
+            <a class="btn signin">Logueate!</a>
+          </div>
+          <!-- Hamburger -->
+          <div class="hamburger d-flex">
+            <i class="bx bx-menu"></i>
+          </div>
+
+      </nav>
+
+      <!--=============== Home ===============-->
+      <div class="home">
+        <div class="row container">
+          <div class="col">
+            <div class="faster">
+              Inscribete!
+              <div class="image d-flex">
+                <img src="{{ url_for('static', filename='./images/corredor.png') }}" alt="" />
+              </div>
+            </div>
+            <h1>
+              Da el paso! <br />
+              Avanza! <br />
+              <span class="color">Conquista!</span>
+            </h1>
+            <p class="text">
+              Descubre nuestra aplicación única que te motiva a alcanzar tus objetivos de salud física, especialmente a través del tracking y el trote. Únete a desafíos y competencias emocionantes mientras formas parte de una comunidad activa enfocada en la mejora personal. ¡Haz ejercicio, compite y logra tus metas con nosotros!
+            </p>
+            <a href="" class="btn">Explorar tienda</a>
+          </div>
+          <div class="col">
+            <img src="{{ url_for('static', filename='./images/imagen1.PNG') }}" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!--=============== SignIn Form ===============-->
+      <div class="wrapper">
+        <form action="" class="form">
+          <h2>SIGN IN</h2>
+
+          <div class="control">
+            <label for="">Enter Email:</label>
+            <input type="email" placeholder="Enter Your Email" />
+          </div>
+          <div class="control">
+            <label for="">Password:</label>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="checkbox d-flex">
+            <input type="checkbox" />
+            <span>Remember Me</span>
+          </div>
+          <button class="btn">Sign In</button>
+          <div class="links">
+            <span>Don't Have An Account? <a href="">Create One</a></span>
+          </div>
+        </form>
+
+        <div class="close-form">
+          <i class="bx bx-x"></i>
+        </div>
+      </div>
+
+    </header>
+
+    <!--=============== Services ===============-->
+    <section class="section services" id="services">
+      <div class="row container">
+        <div class="col">
+          <h2>Vision</h2>
+
+          <div id="mi-elemento">Pasa el mouse aquí</div>
+
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{{ url_for('static', filename='./images/yoga.png') }}" alt="" />
+            <h3>
+              Date un <br />
+              respiro al <br />
+              aire libre
+            </h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{{ url_for('static', filename='./images/jugadorvoley.png') }}" alt="" />
+            <h3>
+              Practica <br />
+              tu deporte <br />
+              favorito
+            </h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{{ url_for('static', filename='./images/salto.png') }}" alt="" />
+            <h3>
+              Activa <br />
+              tu cuerpo <br />
+              y mente
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== About ===============-->
+    <section class="section about" id="about">
+      <div class="row container">
+        <div class="col">
+          <img src="{{ url_for('static', filename='./images/corredor.jpg') }}" alt="" />
+        </div>
+        <div class="col">
+          <h2>Nos preocupamos por nuestros usuarios!</h2>
+          <p>
+            Nos enorgullece presentar nuestros objetivos y brindarles una visión clara de lo que buscamos lograr. Estamos comprometidos en comprometer al mundo a una vida mas saludable.
+          </p>
+          <div class="d-grid">
+            <div class="card">
+              <h4>Promover la salud fisica</h4>
+              <span>hacerlo de manera dinámica y acompañada para todos los usuarios de la aplicación</span>
+            </div>
+            <div class="card">
+              <h4>Redes sociales!</h4>
+              <span>Inspiramos a hacer deporte por medio de las redes sociales!</span>
+            </div>
+            <div class="card">
+              <h4>La salud fisica es importante!</h4>
+              <span>Concientizar a las personas de la importancia de la actividad física y de buscar fuentes verídicas para tener asesoramiento </span>
+            </div>
+            <div class="card">
+              <h4>Productos nacionales!</h4>
+              <span>buena calidad y con gran flexibilidad tanto en sus tallas como en sus precios</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== Recipes ===============-->
+    <section class="section recipes" id="recipes">
+      <h2>Conectate con otros usuarios!</h2>
+    </section>
+    <!--=============== Testimonials ===============-->
+    <section class="section testimonials" id="testimonials">
+      <div class="row container">
+        <div class="col">
+          <div class="card" data-filter="rosele">
+            <div class="d-flex">
+              <div class="image">
+                <img src="{{ url_for('static', filename='./images/profile-1.jpg') }}" alt="" />
+              </div>
+              <div>
+                <h4>Sofia Lievano</h4>
+                <span>Excelentes productos!</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-filter="marvin">
+            <div class="d-flex">
+              <div class="image">
+                <img src="{{ url_for('static', filename='./images/profile-2.jpg') }}" alt="" />
+              </div>
+              <div>
+                <h4>Ashley Diaz</h4>
+                <span>Increible comodidad con los productos!</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-filter="guy">
+            <div class="d-flex">
+              <div class="image">
+                <img src="{{ url_for('static', filename='./images/profile-3.jpg') }}" alt="" />
+              </div>
+              <div>
+                <h4>Juan Felipe</h4>
+                <span>Increibles precios!</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-filter="kathryn">
+            <div class="d-flex">
+              <div class="image">
+                <img src="{{ url_for('static', filename='./images/profile-4.jpg') }}" alt="" />
+              </div>
+              <div>
+                <h4>Lucia Perez</h4>
+                <span>hay muchos descuentos!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h2>
+            Aplicable a todas tus <br />
+            <span>Necesidades</span>
+          </h2>
+          <div class="test-wrapper">
+            <div class="testimonial active" data-id="rosele">
+              <div class="d-flex">
+                <div>
+                  <h4>Julia Martinez</h4>
+                  <span>Usuario frecuente...</span>
+                </div>
+
+                <div class="rating">
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                  <span><i class="bx bxs-star"></i></span>
+                </div>
+              </div>
+
+              <p>
+                “Ofrecen productos geniales, ademas que te motiva a hacer ejercicio!
+                entre mas ejercicio hagas mas descuentos increibles hay!
+                aprovecha e invita a tus amigos a compartir esta genial idea!”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=============== App ===============-->
+    <section class="section app">
+      <div class="row container">
+        <div class="col">
+          <div class="circle">
+            <div class="inner-circle"></div>
+            <img class="logtotal" src="{{ url_for('static', filename='./images/logototal.png') }}" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <h2>
+            Disfruta de todas nuestras ventajas y servicios exclusivos
+          </h2>
+          <p>
+            recuerda unirte a nuestra comunidad para hacer parte de 
+            mejores eventos y compartir con otros usuarios!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--=============== Footer ===============-->
+    <footer class="footer">
+      <div class="row container">
+        <div class="col">
+          <div class="logo d-flex">
+            <img src="{{ url_for('static', filename='./images/logo.png') }}" alt="logo" />
+          </div>
+        </div>
+        <div class="col">
+          <div>
+            <h4>Tienda</h4>
+            <a href="">Presupuesto</a>
+            <a href="">... </a>
+            <a href="">...</a>
+            <a href="">...</a>
+          </div>
+          <div>
+            <h4>Servicios</h4>
+            <a href="">...</a>
+            <a href="">... </a>
+            <a href="">...</a>
+            <a href="">...</a>
+          </div>
+          <div>
+            <h4>Soporte</h4>
+            <a href="">...</a>
+            <a href="">... </a>
+            <a href="">...</a>
+            <a href="">...</a>
+          </div>
+          <div>
+            <h4>Contactanos!</h4>
+            <a href="">...</a>
+            <a href="">... </a>
+            <a href="">...</a>
+            <a href="">...</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <div class="row container d-flex">
+        <p>Copyright © 2023 FitStride</p>
+        <p>Created by Miguel Diaz, Daniela Benjumea</p>
+      </div>
+    </div>
+
+    <!--=============== Swiper JS ===============-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--=============== Custom JS ===============-->
+    <script src="{{ url_for('static', filename='./js/main.js') }}"></script>
+  </body>
+</html>
